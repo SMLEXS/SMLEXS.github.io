@@ -1,0 +1,38 @@
+
+/* Thai full-content style */
+:root{
+  --primary:#c02b2b;
+  --gold:#d4af37;
+  --ink:#222;
+  --muted:#666;
+  --bg:#fffdf8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family: 'Noto Sans Thai', Tahoma, 'Segoe UI', system-ui, sans-serif;}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10}
+.nav-inner{display:flex;align-items:center;gap:14px;padding:12px 20px;flex-wrap:wrap}
+.brand{font-weight:800;color:var(--primary)}
+.navlinks{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.navlinks a{padding:8px 10px;border-radius:10px;color:#333}
+.navlinks a.active,.navlinks a:hover{background:var(--primary);color:#fff;text-decoration:none}
+.hero{background:linear-gradient(180deg, rgba(192,43,43,.08), rgba(0,0,0,0));padding:40px 0}
+.hero h1{margin:0 0 6px;font-size:34px}
+.hero p{margin:0;color:var(--muted);font-size:18px}
+.section-title{font-size:26px;margin:22px 0 10px;color:var(--primary)}
+.lead{font-size:18px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.card{grid-column:span 6;background:#fff;border:1px solid #eee;border-radius:14px;overflow:hidden}
+.card h3{margin:0;padding:12px 14px;border-bottom:1px solid #f0f0f0;color:#333}
+.card .pad{padding:14px}
+.note{background:#fff;border-left:4px solid var(--gold);padding:12px 14px;border-radius:8px;margin:10px 0;color:#444}
+.list{padding-left:18px}
+.list li{margin:6px 0}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border:1px solid #eee;padding:10px;text-align:left}
+.kicker{color:var(--primary);font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:.2px}
+.footer{margin-top:36px;background:#fff;border-top:1px solid #eee}
+.foot-inner{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:16px 20px;color:#777;font-size:14px}
+@media (max-width:900px){ .card{grid-column:span 12} }
